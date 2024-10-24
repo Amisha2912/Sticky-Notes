@@ -43,6 +43,6 @@ Feel free to clone this project and add your own ideas! Whether it's new feature
 To clone the repository to your local machine, run the following command in your terminal:
 
 ```bash
-git clone https://github.com/your-username/sticky-notes.git
+git clone https://github.com/Amisha2912/Sticky-Notes.git
 
 
