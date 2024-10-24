@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Comic Sans MS", cursive;
+}
+
+
+html, body {
+    height: 100vh; /* Ensure the body and html take full height */
+    /* overflow-y: hidden; */
+}
+#main-box{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+
+
+
+    #left-box{
+        width:50%;
+        background-color: lavender;
+
+
+        .content{
+           margin: 3.5vw;
+           /* border:1px solid red; */
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           gap:20px;
+
+           
+           button{
+             padding:10px;
+             background: linear-gradient(90deg,pink,white,pink);
+             border: none;
+             border-radius: 20px;
+             color: green;
+             cursor: pointer;
+           }
+        }
+
+        #addNotes{
+            border-radius:20px;
+            padding:10px;
+            font-size:1rem;
+            width: 100%;
+            min-height: 90px;   /* Minimum height */
+            max-height: 400px;   /* Maximum height */
+            overflow: hidden;    /* Hide scrollbars initially */
+            resize: none; 
+        }
+
+    }
+
+    #right-box{
+        width:50%;
+        /* height: calc(100vh - padding); */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+
+        h1,#message{
+            text-align: center;
+            
+        }
+
+        #message{
+            font-size: 1.5rem;
+            padding-top: 30px;
+        }
+
+
+
+        #getNote {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px;
+            padding-top: 30px;
+            /* Ensure the container doesn't allow overflow */
+            overflow: hidden;
+        
+            div {
+                position: relative;
+                color: black;
+                padding: 15px;
+                gap: 10px;
+                width: 15vw;
+                max-width: 100%; /* Ensure divs do not exceed the container width */
+                flex-shrink: 1; /* Allow divs to shrink if needed */
+                border-radius: 10px;
+        
+                p {
+                    word-wrap: break-word; 
+                    overflow: hidden;
+                    /* text-overflow: ellipsis; */
+                    max-height: 6rem;
+                    
+                    width: 100%;
+                    
+                    
+                }
+            }
+        }
+        
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            /* margin-left:10px;
+            margin-bottom:10px; */
+            padding:3px 5px;
+            background-color: black;
+            border-radius: 50%;
+            border: none;
+            color:red;
+            font-weight: 600;
+            transition: transform 0.4s ease;
+        }
+        
+            
+        
+    }
+}
+
+button:hover {
+    transform: scale(1.1); 
+}
+
+
+.topic {
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: lavender; 
+    border: none;
+    text-align: center; 
+}
+
+.topic-header {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.topic h1 {
+    padding: 10px 0; 
+}
+
+.topic q {
+    font-style: italic; 
+    color: darkslategray; 
+}
+
+img{
+    max-width: 12vw;
+}
+
+
+/*+++++++++responsive+++++++++++*/
+
+@media (max-width: 540px) {
+    .topic h1 {
+        padding: 0; 
+    }
+
+    .content{
+        margin-top: 5vh !important;
+    }
+}
+
+@media (max-width: 370px){
+    #left-box{
+        button{
+            padding:0 !important;
+            border-radius: 0 !important;
+        }
+    }
+
+    .content{
+        margin-top: 10px !important;
+    }
+
+    #addNotes{
+        height: 200px;
+    }
+
+    .topic{
+        margin-bottom: 10px !important;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STICKY NOTES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-box">
+        <div id="left-box">
+            <div class="topic">
+                <div class="topic-header">
+                    <h1>Learning Goals</h1>
+                    <img src="images.png" alt="" >
+                </div>
+                <q>The act of writing is the act of discovering what you believe. – David Hare</q>
+            </div>
+            <div class="content">
+                <div id="addNoteColor">
+                    <textarea name="" id="addNotes" rows="12" cols="40" placeholder="Set your goals..."></textarea>
+                    <span style="padding-left: 10px;"> Bg color =></span>
+                    <input type="color" id="color"><br>
+                    <span style="padding-left: 10px;"> text color =></span>
+                    <input type="color" id="colorTxt">
+                </div>
+                <div id="button">
+                    <button>ADD NOTES</button>
+                    <button id="refresh">REFRESH</button>
+                </div>
+            </div>
+        </div>
+        <div id="right-box">
+            <h1>Your Notes</h1>
+            <p id="message">You have not added a note yet.</p>
+            <div id="getNote">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
