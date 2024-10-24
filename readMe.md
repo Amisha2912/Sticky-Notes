@@ -18,7 +18,7 @@ Welcome to the Sticky Notes project! This application allows users to create, cu
 
 ## Getting Started
 
-You can view the Sticky Notes project live on GitHub Pages: [Sticky Notes Project](https://your-username.github.io/sticky-notes)
+You can view the Sticky Notes project live on GitHub Pages: [Sticky Notes Project](https://amisha2912.github.io/Sticky-Notes/)
 
 ## Usage
 
