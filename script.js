@@ -10,7 +10,7 @@ button.addEventListener('click', function() {
     if (notes.value === "") {
         alert("Please write something in the notes before submitting!"); 
     }
-    // else alert("Your note is successfully added!!");
+    
 });
 
 button.addEventListener("click",function(){
@@ -28,7 +28,7 @@ button.addEventListener("click",function(){
     addedNotes.style.color=colorTxt.value;
     notes.value="";
 
-    message.style.display='none';
+    message1.style.display='none';
 
     crossBtn.addEventListener("click",function(){
         mBox.style.display='none';
