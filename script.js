@@ -6,14 +6,22 @@ const colorTxt=document.getElementById("colorTxt");
 const noteDisplay=document.getElementById("getNote");
 const message1 = document.querySelector('#message');
 
-button.addEventListener('click', function() {
-    if (notes.value === "") {
-        alert("Please write something in the notes before submitting!"); 
-    }
+// button.addEventListener('click', function() {
+//     if (notes.value === "") {
+//         alert("Please write something in the notes before submitting!"); 
+//         return;
+//     }
     
-});
+// });
 
 button.addEventListener("click",function(){
+
+    if (notes.value === "") {
+        alert("Please write something in the notes before submitting!"); 
+        return;
+    }
+
+
     let mBox=document.createElement('div');
     let addedNotes=document.createElement('p');
     let crossBtn=document.createElement('button');
